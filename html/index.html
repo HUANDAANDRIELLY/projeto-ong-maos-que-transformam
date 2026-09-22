@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Mãos que Transformam | ONG</title>
+
+    <meta name="description" content="ONG Mãos que Transformam - solidariedade que muda vidas.">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="../imagens/logo.png"
+             alt="Logo da ONG Mãos que Transformam"
+             width="220">
+
+        <h1>Mãos que Transformam</h1>
+
+        <p>Solidariedade que muda vidas.</p>
+
+        <nav aria-label="Navegação principal">
+
+            <a href="#inicio" data-rota="inicio">
+                Início
+            </a>
+
+            |
+
+            <a href="#projetos" data-rota="projetos">
+                Projetos
+            </a>
+
+            |
+
+            <a href="#cadastro" data-rota="cadastro">
+                Participe
+            </a>
+
+        </nav>
+        <button type="button"
+                data-alto-contraste
+                aria-pressed="false">
+            Alto contraste
+        </button>
+    </header>
+
+
+    <main>
+
+        <div data-conteudo>
+
+            <section aria-labelledby="apresentacao">
+
+                <h2 id="apresentacao">
+                    Pequenos gestos, grandes transformações
+                </h2>
+
+                <img src="../imagens/banner.png"
+                     alt="Voluntários realizando uma ação solidária com uma criança">
+
+                <p>
+                    A Mãos que Transformam é uma organização da sociedade civil dedicada a promover solidariedade, inclusão e oportunidades para pessoas em situação de vulnerabilidade.
+                </p>
+
+                <p>
+                    Unimos doadores, voluntários e parceiros para transformar necessidades sociais em ações concretas.
+                </p>
+
+            </section>
+
+
+            <section aria-labelledby="contato">
+
+                <h2 id="contato">
+                    Contato
+                </h2>
+
+                <address>
+
+                    E-mail:
+                    <a href="mailto:contato@maosquetransformam.org.br">
+                        contato@maosquetransformam.org.br
+                    </a>
+
+                    <br>
+
+                    Telefone:
+                    <a href="tel:+5511999999999">
+                        (11) 99999-9999
+                    </a>
+
+                    <br>
+
+                    São Paulo - SP
+
+                </address>
+
+            </section>
+
+        </div>
+
+
+        <!-- TEMPLATE: PROJETOS -->
+
+        <template data-template="projetos">
+
+            <section aria-labelledby="doacao">
+
+                <h2 id="doacao">
+                    Doações
+                </h2>
+
+                <p>
+                    As contribuições ajudam a financiar campanhas de alimentos, roupas, materiais escolares e outras necessidades das comunidades atendidas.
+                </p>
+
+                <h3>
+                    Como contribuir
+                </h3>
+
+                <p>
+                    Escolha o valor que deseja doar e entre em contato com a ONG para receber as orientações de contribuição.
+                </p>
+
+            </section>
+
+
+            <section aria-labelledby="voluntariado">
+
+                <h2 id="voluntariado">
+                    Voluntariado
+                </h2>
+
+                <p>
+                    Voluntários podem colaborar em campanhas, eventos, atividades educativas e ações de apoio comunitário.
+                </p>
+
+                <h3>
+                    Como participar
+                </h3>
+
+                <p>
+                    Preencha o
+                    <a href="#cadastro" data-rota="cadastro">
+                        formulário de cadastro
+                    </a>
+                    e informe suas áreas de interesse e disponibilidade.
+                </p>
+
+            </section>
+
+
+            <section aria-labelledby="impacto">
+
+                <h2 id="impacto">
+                    Nosso propósito
+                </h2>
+
+                <p>
+                    Promover inclusão, fortalecer a participação comunitária e ampliar o acesso a oportunidades por meio da solidariedade.
+                </p>
+
+            </section>
+
+        </template>
+
+
+        <!-- TEMPLATE: CADASTRO -->
+
+        <template data-template="cadastro">
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>
+                        Dados pessoais
+                    </legend>
+
+                    <p>
+                        <label for="nome">
+                            Nome completo:
+                        </label>
+                        <br>
+
+                        <input id="nome"
+                               name="nome"
+                               type="text"
+                               required
+                               autocomplete="name">
+                    </p>
+
+
+                    <p>
+                        <label for="email">
+                            E-mail:
+                        </label>
+                        <br>
+
+                        <input id="email"
+                               name="email"
+                               type="email"
+                               required
+                               autocomplete="email">
+                    </p>
+
+
+                    <p>
+                        <label for="nascimento">
+                            Data de nascimento:
+                        </label>
+                        <br>
+
+                        <input id="nascimento"
+                               name="nascimento"
+                               type="date"
+                               required>
+                    </p>
+
+
+                    <p>
+                        <label for="cpf">
+                            CPF:
+                        </label>
+                        <br>
+
+                        <input id="cpf"
+                               name="cpf"
+                               type="text"
+                               inputmode="numeric"
+                               pattern="[0-9]{11}"
+                               maxlength="11"
+                               placeholder="Somente 11 números"
+                               required
+                               title="Digite 11 números.">
+                    </p>
+
+
+                    <p>
+                        <label for="telefone">
+                            Telefone:
+                        </label>
+                        <br>
+
+                        <input id="telefone"
+                               name="telefone"
+                               type="tel"
+                               inputmode="tel"
+                               pattern="[0-9]{10,11}"
+                               maxlength="11"
+                               placeholder="DDD + número"
+                               required
+                               title="Digite 10 ou 11 números.">
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>
+                        Endereço
+                    </legend>
+
+
+                    <p>
+                        <label for="cep">
+                            CEP:
+                        </label>
+                        <br>
+
+                        <input id="cep"
+                               name="cep"
+                               type="text"
+                               inputmode="numeric"
+                               pattern="[0-9]{8}"
+                               maxlength="8"
+                               placeholder="Somente 8 números"
+                               required
+                               title="Digite 8 números.">
+                    </p>
+
+
+                    <p>
+                        <label for="endereco">
+                            Endereço:
+                        </label>
+                        <br>
+
+                        <input id="endereco"
+                               name="endereco"
+                               type="text"
+                               required
+                               autocomplete="street-address">
+                    </p>
+
+
+                    <p>
+                        <label for="cidade">
+                            Cidade:
+                        </label>
+                        <br>
+
+                        <input id="cidade"
+                               name="cidade"
+                               type="text"
+                               required
+                               autocomplete="address-level2">
+                    </p>
+
+
+                    <p>
+                        <label for="estado">
+                            Estado:
+                        </label>
+                        <br>
+
+                        <select id="estado"
+                                name="estado"
+                                required>
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>MT</option>
+                            <option>SP</option>
+                            <option>MS</option>
+                            <option>GO</option>
+                            <option>PR</option>
+                            <option>RJ</option>
+                            <option>MG</option>
+                            <option>BA</option>
+                            <option>DF</option>
+                            <option>Outro</option>
+
+                        </select>
+
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>
+                        Forma de participação
+                    </legend>
+
+
+                    <p>
+
+                        <label for="participacao">
+                            Como deseja participar?
+                        </label>
+
+                        <br>
+
+                        <select id="participacao"
+                                name="participacao"
+                                required>
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="doacao">
+                                Doação
+                            </option>
+
+                            <option value="voluntariado">
+                                Voluntariado
+                            </option>
+
+                            <option value="ambos">
+                                Doação e voluntariado
+                            </option>
+
+                        </select>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="mensagem">
+                            Área de interesse ou mensagem:
+                        </label>
+
+                        <br>
+
+<textarea id="mensagem"
+          name="mensagem"
+          rows="5">
+</textarea>
+
+                    </p>
+
+                </fieldset>
+
+
+                <p>
+
+                    <button type="submit">
+                        Enviar cadastro
+                    </button>
+
+                    <button type="reset">
+                        Limpar
+                    </button>
+
+                </p>
+
+            </form>
+
+        </template>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Mãos que Transformam - ONG.
+        </p>
+
+    </footer>
+
+
+    <script type="module" src="../js/app.js"></script>
+
+</body>
+</html>
